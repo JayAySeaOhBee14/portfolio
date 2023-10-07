@@ -28,13 +28,13 @@ h1, h2, h3, h4, h5, h6, h1b {
 }
 
 p, span {
-	color: var(--txtd);
+	color: var(--txt);
   text-align: center;
   margin-top: 10px;
 }
 
 a {
-  color: #4666FF;
+  color: var(--a);
   text-decoration: none;
 }
 
@@ -48,13 +48,59 @@ a {
   border: none;
 }
 
-:root {
-	--bgp: #080D0D;
+.light {
+	--accent-color: #0B6FE1;
+	--accent-color-hover: #0020c2;
+	--shadow: rgba(0 0 0 / 10%);
+  --bgp: #FAFAFA;
+	--bgs: #1AB4B4;
+  --tc:  #d6d6d6;
+	--txt: #000F0A;
+	--txtd: #FFF0F5;
+	--nav: #EBEBEB;
+  --bgsc: #000F0A;
+  --a: #0020c2;
+}
+
+.dark {
+  --accent-color: #FFF0F5;
+	--accent-color-hover: #d4d4d4;
+  --bgp: #080D0D;
 	--bgs: #e54b4b;
+  --tc:  #383838;
 	--txt: #FFF0F5;
 	--txtd: #FFF0F5;
 	--nav: #141414;
   --bgsc: #FFF0F5;
+  --a: #4666FF;
+}
+
+.icons .inner ion-icon:hover {
+	background: var(--tc) !important;
+}
+
+.theme {
+  position: absolute;
+	font-size: 30px;
+  margin-top: 6px;
+	cursor: pointer;
+	color: var(--accent-color);
+	transition: 0.2s;	
+  /*top: 10px;*/
+  right: 20px;
+}
+
+.theme:hover {
+	transform: scale(1.1);
+	color: var(--accent-color-hover);
+}
+
+.theme.rotated {
+	transform: rotate(-180deg);
+}
+
+.theme.rotated:hover {
+	transform: rotate(-180deg) scale(1.1);
 }
 
 h1, {
@@ -94,7 +140,7 @@ nav {
   display: flex-wrap;
   align-items: space-around;
 	z-index: 1;
-  border-bottom: solid white;
+  border-bottom: solid var(--bgsc);
 }
 
 nav a {
@@ -114,7 +160,7 @@ i {
 }
 
 .social {
-	font-size: 1.5em;
+	font-size: 26px;
 	margin-right: 0em;
 	color: var(--txt);
 }
@@ -192,14 +238,16 @@ margin-top: 7vh;
   align-items: center;
 	border-radius: 2em;
 }
+
 .img-cell:hover .overlay {
   opacity: 1;
   animation: bounce;
   animation-duration: 2s;
   cursor: pointer;
 }
+
 .overlay p {
-  color: var(--txt);
+  color: var(--txtd);
   font-size: 1rem;
   text-align: center;
   padding: 0.5em;
@@ -215,22 +263,26 @@ margin-top: 7vh;
   align-items: flex-start;
   overflow: hidden;
 }
+
 .img-table {
   display: flex;
   flex-wrap: wrap;
   align-content: justify;
 }
+
 .img-cell {
   position: relative;
   margin: 10px;
   text-align: center;
 }
+
 .img-cell img {
   width: 250px;
   height: auto;
   display: inline-block;
 	border-radius: 3.342069em;
 }
+
 .img-cell2 img {
   width: 100%;
   max-width: 250px;
@@ -241,6 +293,7 @@ margin-top: 7vh;
   display: inline-block;
 	border-radius: 3.342069em;
 }
+
 .img-cell3 img {
   width: 100%;
   max-width: 250px;
@@ -252,6 +305,7 @@ margin-top: 7vh;
   display: inline-block;
 	border-radius: 3.342069em;
 }
+
 footer {
 	background: var(--nav);
 	width: 100%;
