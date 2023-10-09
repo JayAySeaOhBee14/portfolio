@@ -20,6 +20,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+  transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, h1b {
@@ -85,7 +86,7 @@ a {
   margin-top: 6px;
 	cursor: pointer;
 	color: var(--accent-color);
-	transition: 0.2s;	
+	transition: 0.3s;	
   /*top: 10px;*/
   right: 20px;
 }
