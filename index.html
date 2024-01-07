@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JayAySeaOhBee14 - Home</title>
+  <title>JayAySeaOhBee14</title>
   <link rel="icon" href="images/JayAySeaOhBee14(1).svg">
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
   <script>if (localStorage.getItem('eruda') !== null) {eruda.init();} //localStorage.setItem("eduda", "true");</script>
@@ -27,39 +27,202 @@
 <body onload="checkTheme();" id="t">
   <nav data-m="bounce-down" data-m-delay="0.5">
     <a href="#">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <a href="#about">About Me</a>
+    <a href="#qual">Qualifications</a>
+    <a href="#cred">Credentials & Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQs</a>
     <a class="social" href="https://github.com/JayAySeaOhBee14" target="_blank">
       <i class="bi bi-github"></i>
     </a>
     <a><ion-icon name="contrast-outline" onclick="theme();" class="theme"></ion-icon></a>
   </nav>
-  <br>
-  <br>
-  <br>
-  <div id="home">
-    <div class="content2">
-        <div class="intro">
+  <div id="wrapper">
+    <script src="script.js"></script>
+    <div class="intro">
       <h1 data-m="reveal" data-m-delay="1.25" data-m-duration="3.5"><img class="pfp"
           src="images/JayAySeaOhBee14(1).svg"></h1>
-      <h1 <div data-m="flip" data-m-delay="0.5">JayAySeaOhBee14</h1>
+      <h1 <div data-m="flip" data-m-delay="0.5">
+        JayAySeaOhBee14 <a class="social" href="https://replit.com/@JayAySeaOhBee14" target="_blank">
+          <i class="bi-person-fill"></i> </a>
+      </h1>
       <div>
         <hr>
         <p>Hi, I'm JayAySeaOhBee14!</p>
       </div>
       <div>
-         <a class="social" href="https://github.com/JayAySeaOhBee14" target="_blank">
-             <i class="bi bi-github"></i>
-         </a>
-         <a class="social-2" href="https://replit.com/@JayAySeaOhBee14" target="_blank">
-            <img class="icon2" src="https://upload.wikimedia.org/wikipedia/commons/7/78/New_Replit_Logo.svg">
-         </a>
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
+        <br>
       </div>
     </div>
   </div>
+  <div id="about">
+    <div class="content">
+      <h1>About Me</h1>
+      <p>I'm a teenage coder and full-stack web developer.</p>
+      <p>I started with scratch, then started doing Python, then C, then HTML, JS, and CSS.</p>
+      <p>I have completed Harvard's CS50 program and am proud to say I have a 4.0 GPA in the class.</p>
+      <p>I am very tech-savvy and later, would love to be a full-time developer. I am very outgoing and love to talk
+        (sometimes too much)!</p>
+      <p>🎨 My hobbies are coding (lol), guitar, listening to music, chess, Rubik's cubing, reading, politics, law,
+        business, and
+        watching/playing sports.</p>
+    </div>
+  </div>
+  <div id="qual">
+    <div class="content">
+      <h1>Qualifications</h1>
+      <h2>Inside Computer Science:</h2>
+      <ul>
+        <li>Completed Harvard CS50 with an A+</li>
+        <br>
+        <li>Developed a working Chrome extension and audio frequency visualizer</li>
+        <br>
+        <li>Certificates in:
+          <ul>
+            <li>Responsive Web Design</li>
+            <li>JavaScript Algorithms and Data Structures</li>
+            <li>Front End Development</li>
+          </ul>
+        </li>
+        <br>
+        <li>Recently made a program (Python Password Cracker) with over 6.5k views</li>
+        <br>
+        <li>Have over 180 followers on coding platform (Replit).</li>
+      </ul>
+      <br>
+      <h2>Outside Computer Science:</h2>
+      <ul>
+        <li>Honor Roll Student</li>
+        <li>1st Place JR. Toastmaster</li>
+        <li>Selected Student Council Member</li>
+        <li>Ran Chess and Guitar Clubs for school as Freshman.</li>
+      </ul>
+    </div>
+  </div>
+  <div id="cred">
+    <div class="content">
+      <h1>Credentials & Certificates (Links and QR Codes Redacted for Privacy)</h1>
+      <p>
+      <div class="imagecontainer">
+        <!-- Shoutout to @Ajh499 for helping with the text image overlays! -->
+        <div class="img-table">
+          <div class="img-cell">
+            <img src="images/Certificates/Responsive Web Design.jpg" alt="Responsive Web Design"
+              data-lightbox="image-1" data-title="My caption">
+            <div class="overlay">
+              <p>"In this Responsive Web Design Certification, you'll learn the languages that developers use to build
+                webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design."
+              </p>
+            </div>
+          </div>
+          <div class="img-cell">
+            <img data-lightbox="cred" src="images/Certificates/JavaScript Algorithms and Data Structures.jpg"
+              alt="Responsive Web Design">
+            <div class="overlay">
+              <p>"In the JavaScript Algorithm and Data Structures Certification, you'll learn the fundamentals of
+                JavaScript including variables, arrays, objects, loops, and functions."</p>
+            </div>
+          </div>
+          <div class="img-cell">
+            <img src="images/Certificates/Front End Development Libraries.jpg" alt="
+  Front End Development Libraries">
+            <div class="overlay">
+              <p>"In the Front End Development Libraries Certification, you'll learn how to style your site quickly
+                with Bootstrap. You'll also learn how to add logic to your CSS styles and extend them with Sass."</p>
+            </div>
+          </div>
+          <div class="img-cell">
+            <img src="images/Certificates/CS50x(Jay).png" alt="Harvard CS50" data-lightbox="CS50 Certificate">
+            <div class="overlay">
+              <p>CS50x teaches efficient problem-solving and to think algorithmically. Topics
+                include algorithms, data structures, security, software engineering, and web development. Languages
+                taught: C, Python, SQL, plus HTML, JS, and CSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </p>
+    </div>
+  </div>
+  <div id="projects">
+    <div class="content">
+      <h1>Projects</h1>
+      <div class="imagecontainer">
+        <div class="img-table">
+          <div class="img-cell">
+            <a href="https://replit.com/@JayAySeaOhBee14/Math-Art-20?v=1" target="_blank">
+              <img src="images/Math Art 2.0.svg" alt="Math Art 2.0">
+              <div class="overlay">
+                <p>Math Art 2.0 is a program that allows you to create any shape you want! Type the name then the
+                  height and watch as you get your very own shape!</p>
+              </div>
+            </a>
+          </div>
+          <div class="img-cell">
+            <a href="https://sick-beats-visualizer.jayayseaohbee14.repl.co/">
+              <img src="images/Sick Beats Visualizer.svg" alt="Sick Beats Visualizer">
+              <div class="overlay">
+                <p>Sick Beasts Visualizer is an app that visualizes your music via frequencies. Use the pre-loaded
+                  song, or import your own, you get great results either way!</p>
+              </div>
+            </a>
+          </div>
+          <div class="img-cell">
+            <a href="https://replit.com/@JayAySeaOhBee14/Python-Password-Cracker?v=1" target="_blank">
+              <img src="images/PPC.svg" alt="Python Password Cracker">
+              <div class="overlay">
+                <p>Have you ever wondered just how secure your passwords really are? Experience the might of Python
+                  Password Cracker: a tool that swiftly cracks passwords using brute force. Witness thousands of
+                  attempts per second in real-time!</p>
+              </div>
+            </a>
+          </div>
+          <div class="img-cell">
+            <a href="https://chrome.google.com/webstore/detail/cat-ears-extension/gefcmkbpjdghaedopnadpbeamcdhjbfn"
+              target="_blank">
+              <img src="images/CEE.svg" alt="Cat Ears Extension">
+              <div class="overlay">
+                <p>Behold, the glorious Cat Ears Extension! This browser extension adds cat ears to the logos of
+                  many popular websites including, but not limited to, YouTube, Facebook, X, and more! Add some joy
+                  to your browsing experience by installing this extension now!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="content">
+      <h1>Contact Me</h1>
+      <p>You can contact me in the comments, on <a href="https://github.com/JayAySeaOhBee14">GitHub</a> or on <a
+          href="https://ask.replit.com/u/JayAySeaOhBee14" target="_blank">ask.replit.com</a>.</p>
+    </div>
+  </div>
+  <div id="faq">
+    <div class="content">
+      <h1>FAQs</h1>
+      <p>Q: Are you on Discord or any other social media?</p>
+      <p>A: No.</p>
+      <br />
+      <p>Q: How active are you on Replit?</p>
+      <p>A: I am almost always online, with the exception of when I am in school.</p>
+      <br />
+      <p>Q: How active are you on <a href="https://ask.replit.com/" target="_blank">Replit Ask</a>?</p>
+      <p>A: I am almost always online, but not as much as normal Replit.</p>
+      <br />
+      <p>Q: Will you help me with my project?</p>
+      <p>A: I am pretty busy but if I have time, I would love to help you!</p>
+    </div>
+  </div>
   <footer>
-    <br <p>Made With 💖 By <a href="https://replit.com/@JayAySeaOhBee14" target="_blank">JayAySeaOhBee14</a> - <a href="https://github.com/JayAySeaOhBee14/portfolio" target="_blank">Source Code</a></p>
+    <br <p>Made With 💖 By <a href="https://replit.com/@JayAySeaOhBee14" target="_blank">JayAySeaOhBee14</a></p>
   </footer>
   <script src="script.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
