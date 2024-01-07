@@ -115,7 +115,7 @@ h1b {
 
 #wrapper {
 	padding: 1em;
-	margin-top: 0em;
+	margin-top: 2.5em;
 }
 
 .content {
@@ -123,29 +123,9 @@ h1b {
 	border: solid var(--bgsc);
 	text-align: left;
 	padding: 1em;
-	width: 75%;
+	width: 70%;
 	margin: 0 auto;
 	margin-bottom: 1.5em;
-  overflow-y: hidden;
-}
-
-.content2 {
-	border-radius: 2em;
-	border: solid var(--bgsc);
-	text-align: left;
-	padding: 1em;
-	width: fit-content;
-	margin: 71.5px auto 81.5px;
-  overflow-y: hidden;
-}
-
-.content3 {
-	border-radius: 2em;
-	border: solid var(--bgsc);
-	text-align: left;
-	padding: 1em;
-	width: fit-content;
-	margin: 205px auto 229px;
   overflow-y: hidden;
 }
 
@@ -155,7 +135,7 @@ nav {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding: 0em;
+	padding: 0.4em;
 	text-align: center;
 	position: fixed;
   display: flex-wrap;
@@ -201,11 +181,6 @@ i {
 	display: inline-block;
 }
 
-.icon2:hover {
-	animation: spin 0.5s ease-in-out;
-	display: inline-block;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -217,17 +192,6 @@ i {
 
 .icon {
 	width: 2em;
-	height: auto;
-	margin-right: 0.4em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.icon2 {
-	width: 2em;
-  scale: 105%;
-  margin-bottom: -6px;
 	height: auto;
 	margin-right: 0.4em;
   -webkit-user-select: none;
@@ -348,8 +312,7 @@ footer {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding-top: 1.08em;
-  padding-bottom: 1.08em;
+	padding-bottom: 1em;
 	text-align: center;
 	position: end;
   display: flex-wrap;
