@@ -20,6 +20,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+  transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, h1b {
@@ -85,7 +86,7 @@ a {
   margin-top: 6px;
 	cursor: pointer;
 	color: var(--accent-color);
-	transition: 0.2s;	
+	transition: 0.3s;	
   /*top: 10px;*/
   right: 20px;
 }
@@ -114,7 +115,7 @@ h1b {
 
 #wrapper {
 	padding: 1em;
-	margin-top: 2.5em;
+	margin-top: 0em;
 }
 
 .content {
@@ -122,9 +123,29 @@ h1b {
 	border: solid var(--bgsc);
 	text-align: left;
 	padding: 1em;
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 	margin-bottom: 1.5em;
+  overflow-y: hidden;
+}
+
+.content2 {
+	border-radius: 2em;
+	border: solid var(--bgsc);
+	text-align: left;
+	padding: 1em;
+	width: fit-content;
+	margin: 71.5px auto 81.5px;
+  overflow-y: hidden;
+}
+
+.content3 {
+	border-radius: 2em;
+	border: solid var(--bgsc);
+	text-align: left;
+	padding: 1em;
+	width: fit-content;
+	margin: 205px auto 229px;
   overflow-y: hidden;
 }
 
@@ -134,7 +155,7 @@ nav {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding: 0.4em;
+	padding: 0em;
 	text-align: center;
 	position: fixed;
   display: flex-wrap;
@@ -180,6 +201,11 @@ i {
 	display: inline-block;
 }
 
+.icon2:hover {
+	animation: spin 0.5s ease-in-out;
+	display: inline-block;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -191,6 +217,17 @@ i {
 
 .icon {
 	width: 2em;
+	height: auto;
+	margin-right: 0.4em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.icon2 {
+	width: 2em;
+  scale: 105%;
+  margin-bottom: -6px;
 	height: auto;
 	margin-right: 0.4em;
   -webkit-user-select: none;
@@ -311,7 +348,8 @@ footer {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding-bottom: 1em;
+	padding-top: 1.08em;
+  padding-bottom: 1.08em;
 	text-align: center;
 	position: end;
   display: flex-wrap;
